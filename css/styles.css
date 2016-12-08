@@ -1,0 +1,123 @@
+body {
+  font-family: 'Roboto', helvetica;
+  font-weight: 100;
+  line-height: 1.3;
+  margin: 0;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+/*Navbar *********/
+
+.logo {
+  float: left;
+  height: 50px;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.logo-image {
+  max-height: 70%;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  border-color: #e0e0e0;
+}
+
+/*content *********/
+
+.hero {
+  background-image: url('../img/mobile-shopping-searches-black-friday.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25em;
+}
+
+.hero-text {
+  background: #263238;
+  padding: 10px;
+  max-width: 90%;
+  left: 2em;
+  right: 2em;
+  bottom: 1em;
+  position: absolute;
+}
+
+.featured-content {
+  margin: 0;
+  height: 120px;
+}
+
+.blue-image {
+  background-image: url('../img/house.png');
+  background-size: cover;
+  background-position: 80% center;
+  height: 100%;
+}
+
+.blue-text {
+  background: #083663;
+  height: 100%;
+  padding: 10px;
+}
+
+.aqua-image {
+  background-image: url('../img/video.jpg');
+  background-size: cover;
+  height: 100%;
+}
+
+.aqua-text {
+  background: #009688;
+  height: 100%;
+  padding: 10px;
+}
+
+.title {
+  font-size: 1.2em;
+}
+
+.big-title {
+  font-size: 1.5em;
+}
+
+.aqua-text a, .blue-text a {
+  font-size: .875em;
+  letter-spacing: 0;
+}
+
+/*Screens *********/
+
+
+@media screen and (max-width: 375) {
+
+  .hero {
+    height: 25em;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 10px;
+  }
+
+}
