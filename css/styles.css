@@ -78,7 +78,7 @@ a:hover {
 .blue-text {
   background: #083663;
   height: 100%;
-  padding: 10px;
+  padding: 20px;
 }
 
 .aqua-image {
@@ -90,7 +90,7 @@ a:hover {
 .aqua-text {
   background: #009688;
   height: 100%;
-  padding: 10px;
+  padding: 20px;
 }
 
 .title {
@@ -137,5 +137,73 @@ a:hover {
     min-height: 13em;
     width: 15em;
   }
+
+  #featured-images {
+    height: 250px;
+  }
+
+  #featured-text {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .dropdown, .navbar-right, {
+    display: block !important;
+  }
+
+  .main-row {
+    height: 700px;
+  }
+
+  .hero {
+    height: 100%;
+  }
+
+  .hero-text {
+    width: 20em;
+    min-height: 10em;
+    padding: 30px;
+    font-size: 1.95313em;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1.2;
+  }
+
+  .content {
+    padding: 0px;
+    height: 100%;
+  }
+
+  .medium-screen {
+    display: none;
+  }
+
+  .small-screen {
+    display: block !important;
+  }
+
+  .blue-image, .aqua-image {
+    height: 210px;
+  }
+
+  .blue-text, .aqua-text {
+    height: 140px;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+  
+  .aqua-text a, .blue-text a {
+    font-size: 1.2em;
+    letter-spacing: 0;
+  }
+
 
 }
