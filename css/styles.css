@@ -40,14 +40,17 @@ a:hover {
   border-color: #e0e0e0;
 }
 
+
+
 /*content *********/
 
 .hero {
   background-image: url('../img/mobile-shopping-searches-black-friday.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   height: 25em;
+  overflow: hidden;
 }
 
 .hero-text {
@@ -98,26 +101,41 @@ a:hover {
   font-size: 1.5em;
 }
 
-.aqua-text a, .blue-text a {
+.aqua-text a, .blue-text a, .extra-text {
   font-size: .875em;
   letter-spacing: 0;
+}
+
+.extra-text, .medium-screen {
+  display: none;
 }
 
 /*Screens *********/
 
 
-@media screen and (max-width: 375) {
+@media screen and (min-width: 768px) {
 
-  .hero {
-    height: 25em;
+  .extra-text, .medium-screen {
+    display: block;
   }
 
-  .dropdown {
-    display: none;
+  .navbar-toggle {
+    display: block;
   }
 
-  .logo {
-    padding-left: 10px;
+  .dropdown, .navbar-right, .small-screen {
+    display: none !important;
+  }
+
+  .title {
+    margin-top: 10px;
+  }
+
+  .hero-text {
+    bottom: 2em;
+    left: 2em;
+    min-height: 13em;
+    width: 15em;
   }
 
 }
